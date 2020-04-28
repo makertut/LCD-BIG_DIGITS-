@@ -11,25 +11,14 @@
 #include "RunningAverage.h"
 
 
-
 RunningAverage myRA(10);
-
-
-
 LiquidCrystal_I2C lcd(0x3F,16,2);  // set the LCD address to 0x27 for a 16 chars and 2 line display
-
-
-
 const int Potentiometer_pin = A1;
-
-
 
 // Variables will change:
 
 int vol = 0;   // counter for the number of button presses
-
 int lastVol = -1;
-
 int samples = 0;
 
 byte LT[8] = 
